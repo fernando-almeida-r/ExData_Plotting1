@@ -76,7 +76,7 @@ plot3 <-        ggplot(data = data) + geom_line(mapping = aes(x = full_time , y 
               panel.grid.minor = element_blank()) +
         scale_y_continuous(name = "Voltage")
 
-png("./figure/lot3.png", width = 480, units = "px")
+png("./figure/plot3.png", width = 480, units = "px")
 print(plot3)
 dev.off()
 
