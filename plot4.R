@@ -82,7 +82,7 @@ dev.off()
 
 plot4 <-        ggplot(data = data) + geom_line(mapping = aes(x = full_time , y = Global_reactive_power)) +
         theme_bw() +
-        scale_x_datetime(name = "Datetime", date_breaks = "1 day", date_labels = "%a") +
+        scale_x_datetime(name = "datetime", date_breaks = "1 day", date_labels = "%a") +
         theme(panel.grid.major = element_blank(),
               panel.grid.minor = element_blank()) +
         scale_y_continuous(name = "Global_reactive_power")

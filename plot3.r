@@ -35,11 +35,11 @@ data <- mutate(data, weekday = weekdays(full_time))
 
 plot3 <-        ggplot(data = data) + geom_line(mapping = aes(x = full_time , y = Voltage)) +
         theme_bw() +
-        scale_x_datetime(name = "Datetime", date_breaks = "1 day", date_labels = "%a") +
+        scale_x_datetime(name = "datetime", date_breaks = "1 day", date_labels = "%a") +
         theme(panel.grid.major = element_blank(),
               panel.grid.minor = element_blank()) +
         scale_y_continuous(name = "Voltage")
 
-png("./figure/lot3.png", width = 480, units = "px")
+png("./figure/plot3.png", width = 480, units = "px")
 print(plot3)
 dev.off()
