@@ -54,6 +54,6 @@ plot2 <-        ggplot(data = data) +
               legend.justification = c("right", "top"),
               legend.box.just = "right") +
         scale_y_continuous(name = "Energy sub metering")
-png("./figure/plot2.png", width = 480, units = "px")
+png("./plot2.png", width = 480, units = "px")
 print(plot2)
 dev.off()

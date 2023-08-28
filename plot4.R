@@ -40,7 +40,7 @@ plot1 <-        ggplot(data = data) + geom_line(mapping = aes(x = full_time , y 
               panel.grid.major = element_blank(),
               panel.grid.minor = element_blank()) +
         scale_y_continuous(name = "Global Active Power (kilowatts)")
-png("./figure/plot1.png", width = 480, units = "px")
+png("./plot1.png", width = 480, units = "px")
 print(plot1)
 dev.off()
 
@@ -65,7 +65,7 @@ plot2 <-        ggplot(data = data) +
               legend.justification = c("right", "top"),
               legend.box.just = "right") +
         scale_y_continuous(name = "Energy sub metering")
-png("./figure/plot2.png", width = 480, units = "px")
+png("./plot2.png", width = 480, units = "px")
 print(plot2)
 dev.off()
 
@@ -76,7 +76,7 @@ plot3 <-        ggplot(data = data) + geom_line(mapping = aes(x = full_time , y 
               panel.grid.minor = element_blank()) +
         scale_y_continuous(name = "Voltage")
 
-png("./figure/plot3.png", width = 480, units = "px")
+png("./plot3.png", width = 480, units = "px")
 print(plot3)
 dev.off()
 
@@ -86,6 +86,6 @@ plot4 <-        ggplot(data = data) + geom_line(mapping = aes(x = full_time , y 
         theme(panel.grid.major = element_blank(),
               panel.grid.minor = element_blank()) +
         scale_y_continuous(name = "Global_reactive_power")
-png("./figure/plot4.png", width = 480, units = "px")
+png("./plot4.png", width = 480, units = "px")
 grid.arrange(plot1, plot3, plot2, plot4, nrow = 2)
 dev.off()

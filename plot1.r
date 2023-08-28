@@ -40,6 +40,6 @@ plot1 <-        ggplot(data = data) + geom_line(mapping = aes(x = full_time , y 
               panel.grid.major = element_blank(),
               panel.grid.minor = element_blank()) +
         scale_y_continuous(name = "Global Active Power (kilowatts)")
-png("./figure/plot1.png", width = 480, units = "px")
+png("./plot1.png", width = 480, units = "px")
 print(plot1)
 dev.off()
